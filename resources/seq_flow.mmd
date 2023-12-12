@@ -1,0 +1,10 @@
+sequenceDiagram
+    participant U as User
+    participant A as app.py
+    participant D as DataProcessor
+    U->>A: Upload CSV files and select columns
+    A->>D: Initiate DataProcessor with uploaded data and selected columns
+    D->>A: Perform exact match
+    D->>A: Perform substring match
+    D->>A: Perform fuzzy match
+    A->>U: Display results

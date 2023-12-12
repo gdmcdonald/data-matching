@@ -1,0 +1,10 @@
+classDiagram
+    class DataProcessor{
+        +pandas.DataFrame df1
+        +pandas.DataFrame df2
+        +list selected_columns
+        +__init__(df1: pandas.DataFrame, df2: pandas.DataFrame, selected_columns: list)
+        +exact_match()
+        +substring_match()
+        +fuzzy_match()
+    }
